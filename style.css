@@ -35,6 +35,12 @@ body {
     width: 20%;
 }
 
+.disc{
+    display: flex;
+    justify-self: center;
+    color: #1c2127;
+}
+
 .main{
     display: flex;
     flex-direction: column;
