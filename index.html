@@ -1,326 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn how to build an ADU in King County. Get matched with licensed ADU builders offering free consultations.">
-        <title>King County ADUs - Rules and Costs</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="house.png">
-        <title>ADU Builders</title>
-        <!-- You can link your CSS file here -->
-        <!-- <link rel="stylesheet" href="styles.css"> -->
-    </head>
-    <body>
-        <h1 class="title">King County ADU Builders & Feasibility Consultations</h1>
-        <div class="main">
-            <div class="top">
-                <p>Build an ADU in King County — Done Right</p>
-                <p>Get matched with experienced, licensed ADU builders who understand King County zoning, permits, and costs.</p>
-                <p>1. Tell us about your property</p>
-                <p>2. We match you with qualified ADU builders</p>
-                <p>3. Get expert guidance + pricing options</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to build an ADU in King County. Get matched with licensed ADU builders offering free consultations.">
+    <title>King County ADU Builders &amp; Feasibility Consultations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="house.png">
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <div class="container site-nav__inner">
+        <div class="site-nav__brand">
+          <span class="site-nav__name">King County ADUs</span>
+        </div>
+        <a href="#contact" class="btn btn--nav">Get Free Estimate</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__bg"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="text-eyebrow text-eyebrow--light">King County ADU Specialists</p>
+        <h1 class="text-display hero__headline">Build an ADU in King County<br>— Done Right.</h1>
+        <p class="hero__subtext">
+          Get matched with experienced, licensed ADU builders who understand
+          King County zoning, permits, and real costs.
+        </p>
+        <div class="hero__steps">
+          <div class="hero__step">
+            <span class="hero__step-num">01</span>
+            <span>Tell us about your property</span>
+          </div>
+          <div class="hero__step">
+            <span class="hero__step-num">02</span>
+            <span>We match you with qualified ADU builders</span>
+          </div>
+          <div class="hero__step">
+            <span class="hero__step-num">03</span>
+            <span>Get expert guidance &amp; pricing options</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--lg">Request Free Consultation</a>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats section--dark">
+      <div class="container stats__grid">
+        <div class="stat-item">
+          <span class="stat-item__number">200+</span>
+          <span class="stat-item__label">ADU Permits Approved in King County</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-item__number">100%</span>
+          <span class="stat-item__label">Licensed &amp; Insured Builders</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-item__number">Free</span>
+          <span class="stat-item__label">Initial Consultation — No Commitment</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-item__number">12+</span>
+          <span class="stat-item__label">Cities Served Across King County</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section section--white" id="work">
+      <div class="container">
+        <p class="text-eyebrow gallery__intro">King County Projects</p>
+        <h2 class="text-heading">Quality ADUs Across the Region</h2>
+        <p class="gallery__subtitle">
+          From detached backyard cottages to garage conversions — we've helped
+          homeowners across Seattle, Bellevue, Redmond, Renton, and beyond.
+        </p>
+        <div class="gallery__grid">
+          <div class="gallery__featured">
+            <img src="ADU2.png" alt="Detached ADU in King County" class="gallery__img gallery__img--featured">
+            <p class="gallery__caption">Detached Backyard ADU — Bellevue</p>
+          </div>
+          <div class="gallery__secondary">
+            <div class="gallery__secondary-item">
+              <img src="ADU3.png" alt="ADU garage conversion" class="gallery__img">
+              <p class="gallery__caption">Garage Conversion — Redmond</p>
             </div>
-            <div class="pics">
-                <img src="ADU1.png" alt="ADU" class="image">
-                <img src="ADU2.png" alt="ADU" class="image">
-                <img src="ADU3.png" alt="ADU" class="image">
-                <img src="KC.png" alt="King County" class="image">
+            <div class="gallery__secondary-item">
+              <img src="KC.png" alt="King County service area" class="gallery__img">
+              <p class="gallery__caption">Serving All of King County</p>
             </div>
-            <form
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process section section--linen" id="how-it-works">
+      <div class="container">
+        <p class="text-eyebrow">Simple Process</p>
+        <h2 class="text-heading process__intro">How It Works</h2>
+        <div class="process__grid">
+          <div class="process-card">
+            <span class="process-card__num">01</span>
+            <h3 class="process-card__heading">Tell Us About Your Property</h3>
+            <p class="process-card__body">Fill out our quick form. We'll ask about your lot, your goals, and your timeline — takes about 2 minutes.</p>
+          </div>
+          <div class="process-card">
+            <span class="process-card__num">02</span>
+            <h3 class="process-card__heading">Get Matched With Qualified Builders</h3>
+            <p class="process-card__body">We connect you with ADU experts who know King County zoning, permits, and the local market inside and out.</p>
+          </div>
+          <div class="process-card">
+            <span class="process-card__num">03</span>
+            <h3 class="process-card__heading">Receive Expert Guidance &amp; Pricing</h3>
+            <p class="process-card__body">Free consultation to plan your project. Get realistic, itemized estimates from licensed, vetted builders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="trust section section--white" id="trust">
+      <div class="container trust__inner">
+        <div>
+          <p class="text-eyebrow">Why Choose Us</p>
+          <h2 class="text-heading trust__intro">Built for King County Homeowners</h2>
+          <ul class="trust__list">
+            <li class="trust__item">
+              <span class="trust__check" aria-hidden="true"></span>
+              <span>Serving Seattle, Bellevue, Redmond, Renton &amp; all of King County</span>
+            </li>
+            <li class="trust__item">
+              <span class="trust__check" aria-hidden="true"></span>
+              <span>Licensed &amp; insured ADU builders — every project, every time</span>
+            </li>
+            <li class="trust__item">
+              <span class="trust__check" aria-hidden="true"></span>
+              <span>Hundreds of ADU permits approved in King County</span>
+            </li>
+          </ul>
+        </div>
+        <div class="trust__aside">
+          <p class="trust__quote">
+            "King County has made it easier than ever to build an ADU.
+            The right builder makes all the difference — and we know exactly who to call."
+          </p>
+          <span class="trust__cite">— King County ADU Specialists</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Lead Form -->
+    <section class="contact section section--linen" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__copy">
+          <p class="text-eyebrow">Free Consultation</p>
+          <h2 class="text-heading">Ready to Build Your ADU?</h2>
+          <p class="contact__desc">
+            Tell us about your property and we'll connect you with King County's
+            top-rated ADU builders — no obligation, no pressure.
+          </p>
+          <div class="contact__chips">
+            <span class="chip">No commitment required</span>
+            <span class="chip">Response within 24 hours</span>
+            <span class="chip">King County licensed builders</span>
+          </div>
+        </div>
+        <div class="contact__form-wrapper">
+          <p class="contact__form-title">Your Property Information</p>
+          <form
             action="https://formspree.io/f/xreezoda"
-            class="fs-form fs-layout__2-column form"
+            class="fs-form fs-layout__2-column"
             target="_top"
             method="POST"
-            >
+          >
             <div class="fs-field">
-                <label class="fs-label" for="name">Full Name</label>
-                <input class="fs-input" id="name" name="name" required />
+              <label class="fs-label" for="name">Full Name</label>
+              <input class="fs-input" id="name" name="name" required />
             </div>
             <div class="fs-field">
-                <label class="fs-label" for="email">Email</label>
-                <input class="fs-input" id="email" name="email" required />
+              <label class="fs-label" for="email">Email</label>
+              <input class="fs-input" id="email" name="email" type="email" required />
             </div>
             <div class="fs-field">
-                <label class="fs-label" for="phone-number">Phone Number</label>
-                <input
+              <label class="fs-label" for="phone-number">Phone Number</label>
+              <input
                 class="fs-input"
                 id="phone-number"
                 name="phone-number"
                 placeholder="(XXX) XXX-XXXX"
-                />
+              />
             </div>
             <div class="fs-field">
-                <label class="fs-label" for="address">Property Address</label>
-                <input class="fs-input" id="address" name="address" required />
+              <label class="fs-label" for="address">Property Address</label>
+              <input class="fs-input" id="address" name="address" required />
             </div>
             <div class="fs-field">
-                <label class="fs-label">What type of ADU are you considering?</label>
-                <div class="fs-radio-group">
+              <label class="fs-label">What type of ADU are you considering?</label>
+              <div class="fs-radio-group">
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="adu-type-backyard"
-                        name="adu-type"
-                        required
-                        type="radio"
-                        value="backyard"
+                      class="fs-radio"
+                      id="adu-type-backyard"
+                      name="adu-type"
+                      required
+                      type="radio"
+                      value="backyard"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="adu-type-backyard">
-                        Detached backyard ADU
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="adu-type-backyard">Detached backyard ADU</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="adu-type-garage"
-                        name="adu-type"
-                        required
-                        type="radio"
-                        value="garage"
+                      class="fs-radio"
+                      id="adu-type-garage"
+                      name="adu-type"
+                      required
+                      type="radio"
+                      value="garage"
                     />
-                    </div>
-                    <div>
+                  </div>
+                  <div>
                     <label class="fs-label" for="adu-type-garage">Garage conversion</label>
-                    </div>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="adu-type-basement"
-                        name="adu-type"
-                        required
-                        type="radio"
-                        value="basement"
+                      class="fs-radio"
+                      id="adu-type-basement"
+                      name="adu-type"
+                      required
+                      type="radio"
+                      value="basement"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="adu-type-basement">
-                        Basement ADU
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="adu-type-basement">Basement ADU</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="adu-type-not-sure"
-                        name="adu-type"
-                        required
-                        type="radio"
-                        value="not-sure"
+                      class="fs-radio"
+                      id="adu-type-not-sure"
+                      name="adu-type"
+                      required
+                      type="radio"
+                      value="not-sure"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="adu-type-not-sure">
-                        Not sure yet
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="adu-type-not-sure">Not sure yet</label>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div class="fs-field">
-                <label class="fs-label">When are you hoping to start?</label>
-                <div class="fs-radio-group">
+              <label class="fs-label">When are you hoping to start?</label>
+              <div class="fs-radio-group">
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="start-time-asap"
-                        name="start-time"
-                        required
-                        type="radio"
-                        value="asap"
+                      class="fs-radio"
+                      id="start-time-asap"
+                      name="start-time"
+                      required
+                      type="radio"
+                      value="asap"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="start-time-asap">
-                        ASAP (0-3 months)
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="start-time-asap">ASAP (0–3 months)</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="start-time-3-6"
-                        name="start-time"
-                        required
-                        type="radio"
-                        value="3-6"
+                      class="fs-radio"
+                      id="start-time-3-6"
+                      name="start-time"
+                      required
+                      type="radio"
+                      value="3-6"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="start-time-3-6">3-6 months</label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="start-time-3-6">3–6 months</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="start-time-6-12"
-                        name="start-time"
-                        required
-                        type="radio"
-                        value="6-12"
+                      class="fs-radio"
+                      id="start-time-6-12"
+                      name="start-time"
+                      required
+                      type="radio"
+                      value="6-12"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="start-time-6-12">
-                        6-12 months
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="start-time-6-12">6–12 months</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="start-time-researching"
-                        name="start-time"
-                        required
-                        type="radio"
-                        value="researching"
+                      class="fs-radio"
+                      id="start-time-researching"
+                      name="start-time"
+                      required
+                      type="radio"
+                      value="researching"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="start-time-researching">
-                        Just Reasearching
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="start-time-researching">Just Researching</label>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div class="fs-field">
-                <label class="fs-label">Do you have a budget range in mind?</label>
-                <div class="fs-radio-group">
+              <label class="fs-label">Do you have a budget range in mind?</label>
+              <div class="fs-radio-group">
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="budget-range-under-150"
-                        name="budget-range"
-                        required
-                        type="radio"
-                        value="under-150"
+                      class="fs-radio"
+                      id="budget-range-under-150"
+                      name="budget-range"
+                      required
+                      type="radio"
+                      value="under-150"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="budget-range-under-150">
-                        Under $150,000
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="budget-range-under-150">Under $150,000</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="budget-range-150-250"
-                        name="budget-range"
-                        required
-                        type="radio"
-                        value="150-250"
+                      class="fs-radio"
+                      id="budget-range-150-250"
+                      name="budget-range"
+                      required
+                      type="radio"
+                      value="150-250"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="budget-range-150-250">$150,000-$250,000</label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="budget-range-150-250">$150,000–$250,000</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="budget-range-over-250"
-                        name="budget-range"
-                        required
-                        type="radio"
-                        value="over-250"
+                      class="fs-radio"
+                      id="budget-range-over-250"
+                      name="budget-range"
+                      required
+                      type="radio"
+                      value="over-250"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="budget-range-over-250">
-                        $250,000+
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="budget-range-over-250">$250,000+</label>
+                  </div>
                 </div>
                 <div class="fs-radio-field">
-                    <div class="fs-radio-wrapper">
+                  <div class="fs-radio-wrapper">
                     <input
-                        class="fs-radio"
-                        id="budget-range-not-sure"
-                        name="budget-range"
-                        required
-                        type="radio"
-                        value="not-sure"
+                      class="fs-radio"
+                      id="budget-range-not-sure"
+                      name="budget-range"
+                      required
+                      type="radio"
+                      value="not-sure"
                     />
-                    </div>
-                    <div>
-                    <label class="fs-label" for="budget-range-not-sure">
-                        Not sure
-                    </label>
-                    </div>
+                  </div>
+                  <div>
+                    <label class="fs-label" for="budget-range-not-sure">Not sure</label>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
-            <div class="fs-field">
-                <label class="fs-label" for="comments">Anything else you'd like us to know?</label>
-                <textarea class="fs-textarea" id="comments" name="comments"></textarea>
+            <div class="fs-field col-span-full">
+              <label class="fs-label" for="comments">Anything else you'd like us to know?</label>
+              <textarea class="fs-textarea" id="comments" name="comments" placeholder="Tell us about your property, goals, or any questions you have..."></textarea>
             </div>
             <div class="fs-button-group">
-                <button class="fs-button" type="submit">Submit</button>
+              <button class="fs-button" type="submit">Request Free Consultation</button>
             </div>
-            </form>
-            <section class="top" id="trust">
-                <h3 style="padding-bottom: 5px;">Why Work With Us</h3>
-                <ul style="list-style:none; padding:0; font-size:18px;">
-                    <li>✅ Serving Seattle, Bellevue, Redmond, Renton & all King County</li>
-                    <li>✅ Licensed & insured ADU builders</li>
-                    <li>✅ Hundreds of ADU permits approved in King County</li>
-                </ul>
-            </section>
-            <section id="how-it-works" class="top">
-                <h3 style="padding-bottom: 5px;">How It Works</h3>
-                <ul style="list-style:none; padding:0; font-size:18px;">
-                    <li><strong>Tell us about your property:</strong> Fill out our quick form above.</li>
-                    <li><strong>Get matched with qualified builders:</strong> We connect you with ADU experts in King County.</li>
-                    <li><strong>Receive expert guidance & pricing:</strong> Free consultation to plan your ADU project.</li>
-                </ul>
-            </section>
-            <section id="education" class="top">
-                <h3 style="padding-bottom: 5px; padding-top: 5px;">King County ADU Guide</h3>
-                
-                <h4 style="padding-bottom: 5px; padding-top: 5px;">Can I Build an ADU in King County?</h4>
-                <p>Most single-family properties in King County can build an ADU, but eligibility depends on lot size, zoning, and existing structures. We help you understand your property’s potential before you start.</p>
-                
-                <h4 style="padding-bottom: 5px; padding-top: 5px;">Types of ADUs</h4>
-                <ul style="list-style:none; padding:0;">
-                    <li>Detached ADU: A separate structure in your backyard.</li>
-                    <li>Garage Conversion: Turn your garage into a livable unit.</li>
-                    <li>Basement ADU: Convert basement space into an apartment.</li>
-                    <li>Not sure yet: We help you explore all options.</li>
-                </ul>
-                
-                <h4 style="padding-bottom: 5px; padding-top: 5px;">King County ADU Permits</h4>
-                <p>Permits are required for every ADU. Typical steps include site evaluation, permit submission, and city inspection. Our builders know the process and can guide you every step of the way.</p>
-                
-                <h4 style="padding-bottom: 5px; padding-top: 5px;">Typical ADU Costs</h4>
-                <p>Costs vary based on size, type, and location. On average, backyard cottages range from $150–$400 per square foot in King County. We help you get realistic estimates from qualified builders.</p>
-            </section>
-            <section id="faq" class="top">
-                <h3 style="padding-bottom: 5px;">Frequently Asked Questions</h3>
-                <ul style="list-style:none; padding:0;">
-                    <li><strong>Do I need a permit for a basement ADU in Seattle?</strong> Yes, all ADUs require a building permit.</li>
-                    <li><strong>How long does it take to build an ADU?</strong> Typically 6–12 months depending on complexity.</li>
-                    <li><strong>Can I rent my ADU immediately?</strong> You must follow King County occupancy and rental rules.</li>
-                    <li><strong>How much does an ADU cost?</strong> Costs vary; we connect you with builders who can give accurate estimates.</li>
-                </ul>
-            </section>
+          </form>
         </div>
-        <p class="disc">By submitting, you agree your information may be shared with licensed ADU builders in King County.</p>
-    </body>
+      </div>
+    </section>
+
+    <!-- ADU Guide / Education -->
+    <section class="guide section section--white" id="education">
+      <div class="container">
+        <p class="text-eyebrow">Resources</p>
+        <h2 class="text-heading">King County ADU Guide</h2>
+        <p class="guide__intro">
+          Most single-family properties in King County can build an ADU, but eligibility
+          depends on lot size, zoning, and existing structures. Here's what you need to know
+          before you start.
+        </p>
+        <div class="guide__grid">
+          <article class="guide-card">
+            <h3 class="guide-card__heading">Can I Build an ADU?</h3>
+            <p>Most single-family properties qualify. Eligibility depends on lot size, zoning, and existing structures. We help you understand your property's potential before you commit to anything.</p>
+          </article>
+          <article class="guide-card">
+            <h3 class="guide-card__heading">Types of ADUs</h3>
+            <ul class="guide-card__list">
+              <li>Detached ADU: A separate structure in your backyard</li>
+              <li>Garage Conversion: Turn your garage into a livable unit</li>
+              <li>Basement ADU: Convert basement space into an apartment</li>
+              <li>Not sure yet: We help you explore all options</li>
+            </ul>
+          </article>
+          <article class="guide-card">
+            <h3 class="guide-card__heading">Permits &amp; Process</h3>
+            <p>Permits are required for every ADU. Typical steps include site evaluation, permit submission, and city inspection. Our builders know the process and can guide you every step of the way.</p>
+          </article>
+          <article class="guide-card">
+            <h3 class="guide-card__heading">Typical Costs</h3>
+            <p>Backyard cottages range from $150–$400 per square foot in King County. Costs vary based on size, type, and location. We connect you with builders who give realistic, itemized estimates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section section--linen" id="faq">
+      <div class="container">
+        <p class="text-eyebrow">Common Questions</p>
+        <h2 class="text-heading">Frequently Asked Questions</h2>
+        <div class="faq__grid">
+          <div class="faq-item">
+            <h3 class="faq-item__question">Do I need a permit for a basement ADU in Seattle?</h3>
+            <p class="faq-item__answer">Yes, all ADUs require a building permit. Our builders handle the permit process and know exactly what King County reviewers look for.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__question">How long does it take to build an ADU?</h3>
+            <p class="faq-item__answer">Typically 6–12 months depending on complexity, permit timelines, and the type of ADU. Permitting alone can take 2–4 months in some jurisdictions.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__question">Can I rent my ADU immediately?</h3>
+            <p class="faq-item__answer">You must follow King County occupancy and rental rules. Once your certificate of occupancy is issued, rental is typically permitted right away.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__question">How much does an ADU cost?</h3>
+            <p class="faq-item__answer">Costs vary widely by type and size. We connect you with builders who provide accurate, itemized estimates based on your specific property and goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="cta-banner section--dark">
+      <div class="container cta-banner__inner">
+        <div>
+          <h2 class="text-heading cta-banner__heading">Start Your ADU Project Today</h2>
+          <p class="cta-banner__sub">Free consultation. No commitment. King County's top builders ready to help.</p>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--lg">Get Free Estimate</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <span class="site-footer__name">King County ADUs</span>
+          <p class="site-footer__tagline">Connecting homeowners with licensed ADU builders across King County, Washington.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#contact">Get Estimate</a>
+          <a href="#education">ADU Guide</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="site-footer__legal">
+          <p class="disc">By submitting, you agree your information may be shared with licensed ADU builders in King County.</p>
+          <p>&copy; 2025 King County ADUs. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>
