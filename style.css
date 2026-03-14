@@ -254,6 +254,27 @@ textarea {
   font-weight: 500;
   color: var(--color-white);
   letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.site-nav__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.site-nav__link {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.site-nav__link:hover,
+.site-nav__link--active {
+  color: var(--color-gold);
 }
 
 /* ─── Hero ────────────────────────────────────────────────── */
@@ -797,6 +818,84 @@ textarea {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
   line-height: 1.6;
+}
+
+/* ─── FAQ Page Specific ───────────────────────────────────── */
+
+.faq-hero {
+  padding: var(--space-xl) 0;
+}
+
+.faq-hero__inner {
+  max-width: 760px;
+}
+
+.faq-breadcrumb {
+  margin-bottom: var(--space-md);
+}
+
+.faq-breadcrumb__link {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.faq-breadcrumb__link:hover {
+  color: var(--color-gold);
+}
+
+.faq-hero__headline {
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.faq-hero__subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: var(--space-lg);
+}
+
+.faq-hero__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.faq-pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.4rem 0.875rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.faq-pill:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+.faq-inline-link {
+  color: var(--color-sage);
+  text-decoration: underline;
+  text-decoration-color: rgba(74, 124, 89, 0.4);
+  text-underline-offset: 2px;
+  transition: color var(--transition);
+}
+
+.faq-inline-link:hover {
+  color: var(--color-forest);
 }
 
 /* ─── Formspree Components (kept, vars updated above) ────── */
