@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* Google Fonts loaded via <link> tags in HTML <head> for better performance */
 
 /* ─── Variables ───────────────────────────────────────────── */
 
@@ -818,6 +818,227 @@ textarea {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
   line-height: 1.6;
+}
+
+/* ─── Inner Page Shared ───────────────────────────────────── */
+
+.text-eyebrow--light {
+  color: var(--color-moss);
+}
+
+/* ─── Cost Guide Page ─────────────────────────────────────── */
+
+.costs-intro {
+  font-size: 1.05rem;
+  color: var(--color-slate);
+  line-height: 1.7;
+  max-width: 720px;
+  margin-bottom: var(--space-lg);
+}
+
+.costs-note {
+  font-size: 0.85rem;
+  color: var(--color-slate);
+  line-height: 1.6;
+  margin-top: var(--space-md);
+  font-style: italic;
+}
+
+.costs-table-wrap {
+  overflow-x: auto;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.costs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  background: var(--color-white);
+}
+
+.costs-table thead {
+  background: var(--color-forest);
+  color: var(--color-white);
+}
+
+.costs-table th {
+  padding: 0.875rem 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.costs-table td {
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: var(--color-charcoal);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.costs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.costs-table tbody tr:nth-child(even) td {
+  background: var(--color-linen);
+}
+
+.costs-example {
+  margin-top: var(--space-xl);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-lg);
+}
+
+.costs-example__heading {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-forest);
+  margin-bottom: var(--space-md);
+}
+
+.costs-example__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.costs-example__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.costs-example__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+.costs-example__value {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--color-forest);
+}
+
+@media (max-width: 768px) {
+  .costs-example__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .costs-table th,
+  .costs-table td {
+    padding: 0.625rem 0.875rem;
+  }
+}
+
+/* ─── Service Areas Page ──────────────────────────────────── */
+
+.areas__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.area-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+  border-top: 3px solid var(--color-forest);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.area-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.area-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.area-card__city {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-forest);
+  margin: 0;
+}
+
+.area-card__tag {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-sage);
+  background: rgba(74, 124, 89, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.area-card__body {
+  font-size: 0.9rem;
+  color: var(--color-slate);
+  line-height: 1.65;
+  margin-bottom: var(--space-sm);
+}
+
+.area-card__facts {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-sm) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1rem;
+}
+
+.area-card__facts li {
+  font-size: 0.8rem;
+  color: var(--color-slate);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.area-card__facts li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--color-sage);
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .areas__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .area-card__facts {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ─── FAQ Page Specific ───────────────────────────────────── */
