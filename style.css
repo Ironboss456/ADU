@@ -277,6 +277,49 @@ textarea {
   color: var(--color-gold);
 }
 
+/* Hamburger toggle button — hidden on desktop, shown on mobile */
+.site-nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+
+.site-nav__toggle:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.site-nav__toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-white);
+  border-radius: 2px;
+  transition: opacity var(--transition), transform var(--transition);
+  transform-origin: center;
+}
+
+.site-nav__toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.site-nav__toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ─── Hero ────────────────────────────────────────────────── */
 
 .hero {
@@ -1414,5 +1457,152 @@ fieldset {
 
   .contact__form-wrapper {
     padding: var(--space-lg) var(--space-md);
+  }
+
+  /* Section padding — reduce from 6rem to 4rem on mobile */
+  .section {
+    padding: var(--space-xl) 0;
+  }
+
+  /* Grid gaps — shrink on mobile */
+  .process__grid {
+    gap: var(--space-md);
+  }
+  .guide__grid {
+    gap: var(--space-md);
+  }
+  .faq__grid {
+    gap: var(--space-md);
+  }
+
+  /* CTA banner already stacks at 1024px, ensure button is full-width on mobile */
+  .cta-banner__inner .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hero content */
+  .hero__content {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+  .hero__subtext {
+    font-size: 1rem;
+  }
+  .hero__cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__cta-row .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Costs table — hide last column, adjust font */
+  .costs-table th {
+    font-size: 0.75rem;
+  }
+  .costs-table td {
+    font-size: 0.85rem;
+  }
+  .costs-table th:last-child,
+  .costs-table td:last-child {
+    display: none;
+  }
+
+  /* Inner-page hero */
+  .faq-hero {
+    padding: var(--space-lg) 0;
+  }
+  .faq-hero__subtitle {
+    font-size: 0.95rem;
+  }
+  .faq-hero__categories {
+    gap: 0.5rem;
+  }
+  .faq-pill {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  /* Mobile hamburger nav */
+  .site-nav__toggle {
+    display: flex;
+  }
+
+  .site-nav__inner {
+    position: relative;
+  }
+
+  .site-nav__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-forest);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 320ms cubic-bezier(0.4, 0, 0.2, 1),
+                padding 320ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    z-index: 99;
+  }
+
+  .site-nav__menu--open {
+    max-height: 340px;
+    padding: var(--space-xs) 0 var(--space-sm);
+  }
+
+  .site-nav__link {
+    display: block;
+    padding: 0.875rem var(--space-lg);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    border-radius: 0;
+  }
+
+  .site-nav__link:hover,
+  .site-nav__link--active {
+    color: var(--color-white);
+    background: rgba(255,255,255,0.06);
+  }
+
+  .site-nav__menu .btn--nav {
+    display: block;
+    width: calc(100% - var(--space-lg) * 2);
+    margin: var(--space-xs) var(--space-lg) 0;
+    text-align: center;
+    border-radius: var(--radius-md);
+    padding: 0.75rem var(--space-md);
+    font-size: 0.95rem;
+  }
+}
+
+/* ─── 480px breakpoint — small phones ────────────────────── */
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+
+  .section {
+    padding: var(--space-lg) 0;
+  }
+
+  .costs-example__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-hero__inner {
+    max-width: 100%;
   }
 }

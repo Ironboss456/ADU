@@ -100,6 +100,9 @@
         <div class="site-nav__brand">
           <a href="index.html" class="site-nav__name">King County ADUs</a>
         </div>
+        <button class="site-nav__toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <div class="site-nav__menu">
           <a href="costs.html" class="site-nav__link">Cost Guide</a>
           <a href="service-areas.html" class="site-nav__link">Service Areas</a>
@@ -594,5 +597,23 @@
       </div>
     </footer>
 
+    <script>
+      (function() {
+        var toggle = document.querySelector('.site-nav__toggle');
+        var menu = document.querySelector('.site-nav__menu');
+        toggle.addEventListener('click', function() {
+          var open = menu.classList.toggle('site-nav__menu--open');
+          toggle.setAttribute('aria-expanded', String(open));
+          toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        });
+        menu.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            menu.classList.remove('site-nav__menu--open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open menu');
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
